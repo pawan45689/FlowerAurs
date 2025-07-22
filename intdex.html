@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Aurs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+ <header>
+  <div class="main-header">
+    <div class="row">
+      <div class="col-2">
+        <img src="https://imgcdn.floweraura.com/fa-logo/final-23-desk.svg" alt="logo" class="logo" />
+      </div>
+
+      <div class="col-3">
+        <div class="delivery-info">
+          <div class="location-input-wrapper">
+            <img src="image/india.469977db.png" alt="India Flag" class="flag-icon" />
+            <input type="text" placeholder="Deliver to?" class="location-input" />
+            <i class="fa-solid fa-pen-to-square edit-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 search-container">
+        <input type="text" class="search-input" placeholder="Search for cakes, gifts, flowers..." />
+        <i class="fas fa-search search-icon"></i>
+      </div>
+
+      <div class="col-5 header-icons">
+        <span class="header-icon-item"><i class="fa-solid fa-map-location-dot fa-xl"></i> Track Order</span>
+        <span class="header-icon-item"><i class="fa-solid fa-gifts fa-xl"></i> Gift Finder</span>
+        <span class="header-icon-item"><i class="fa-solid fa-cart-shopping fa-xl"></i> Cart</span>
+        <span class="header-icon-item"><i class="fas fa-user fa-xl"></i> Sign In</span>
+        <span class="header-icon-item"><i class="fa-solid fa-bars fa-xl"></i> More</span>
+      </div>
+
+      <div class="col-12"><hr /></div>
+    </div>
+  </div>
+</header>
+
+    <div class="col-12 sticky-list-nav" style="margin-right: 50px">
+      <ul class="list" style="margin-bottom: 15px">
+        <li>Same Day</li>
+        <li>Flowers</li>
+        <li>Cakes</li>
+        <li>Combos</li>
+        <li>Birthday</li>
+        <li>Aniversary</li>
+        <li>Gift</li>
+        <li>Personalized</li>
+        <li>Plants</li>
+        <li>Ocuasion</li>
+        <li>International</li>
+      </ul>
+      <hr />
+    </div>
+    <section>
+      <div class="carousel-container" style="margin-top: 20px">
+        <div class="carousel-slide">
+          <img src="image/anniversary-flowers.avif" alt="Aniversary" />
+          <img
+            src="image/cake-birthday-homepage-fa-desktop_1.avif"
+            alt="Birthday"
+          />
+          <img
+            src="image/flower-birthday-homepage-fa-desktop_0.avif"
+            alt="flowers"
+          />
+          <img src="image/self_watering_plant_h_DESKTOP.avif" alt="Plants" />
+        </div>
+
+        <!-- Dots -->
+        <div class="carousel-dots">
+          <span class="dot active" onclick="moveToSlide(0)"></span>
+          <span class="dot" onclick="moveToSlide(1)"></span>
+          <span class="dot" onclick="moveToSlide(2)"></span>
+          <span class="dot" onclick="moveToSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <div class="first-container">
+          <div class="item-row">
+            <div class="item">
+              <img src="image/Flowers-card.avif" alt="" />Flowers
+            </div>
+            <div class="item">
+              <img src="image/cake-homepage_0.jpg" alt="" />Cake
+            </div>
+            <div class="item">
+              <img src="image/combo-gifts_1.jpg" alt="" />Combos
+            </div>
+            <div class="item">
+              <img src="image/plant-card-image_0.jpg" alt="" />Plants
+            </div>
+            <div class="item">
+              <img src="image/personalised_18.jpg" alt="" />Personalized
+            </div>
+            <div class="item">
+              <img src="image/gift_card_9_0.jpg" alt="" />Gifts
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop By Occasions & Relations -->
+
+      <section>
+        <div class="ocuasion-container">
+          <h1>Shop By Occasions & Relations</h1>
+          <p class="subheading">Surprise Your Loved Ones</p>
+
+          <div class="row ocuasion-grid">
+            <div class="ocuasion-card">
+              <img src="image/anniversary_7.png" alt="Anniversary" />
+              <p>Anniversary Gifts</p>
+            </div>
+            <div class="ocuasion-card">
+              <img src="image/birthday_6.avif" alt="Birthday" />
+              <p>Birthday Gifts</p>
+            </div>
+            <div class="ocuasion-card">
+              <img src="image/gift_for_him_0.png" alt="For Him" />
+              <p>Gift For Him</p>
+            </div>
+            <div class="ocuasion-card">
+              <img src="image/gift_for_her_0.png" alt="For Her" />
+              <p>Gift For Her</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Selling Flowers & Gifts -->
+      <div class="best-selling-container">
+        <h1>Best Selling Flowers & Gifts</h1>
+        <p class="subheading">Surprise Your Loved Ones</p>
+        <div class="row best-selling-grid">
+          <div class="best-selling-card">
+            <img src="image/DSC_1243_0.avif" alt="Anniversary" />
+            <p class="product-name">10 Red Roses Bouquet</p>
+            <p class="price">₹545</p>
+            <div class="rating">4.9★</div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="image/profuse-jade-terrarium-9969080pl-A_0.avif"
+              alt="Birthday"
+            />
+            <p class="product-name">Profuse Jade Terrarium</p>
+            <p class="price">₹685</p>
+            <div class="rating">4.9★</div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="image/blue-orchids-bouquet-n-choco-cake-9813430co-C_1.avif"
+              alt="For Him"
+            />
+            <p class="product-name">Chocolate Truffle Cake</p>
+            <p class="price">₹595</p>
+            <div class="rating">4.9★</div>
+          </div>
+          <div class="best-selling-card">
+            <img src="image/5-A_31_0.avif" alt="For Her" />
+            <p class="product-name">Calming Essentials Gift Hamper</p>
+            <p class="price">₹1595</p>
+            <div class="rating">5★</div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="image/engraved-acrylic-photo-lamp-B_0.avif"
+              alt="For Her"
+            />
+            <p class="product-name">Engraved Acrylic Photo Lamp</p>
+            <p class="price">₹990</p>
+            <div class="rating">4.9★</div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="image/whispers-of-affection-pink-roses-bouquet-9802810fl-A_0.avif"
+              alt="For Her"
+            />
+            <p class="product-name">Whispers Of Affection Pink Roses</p>
+            <p class="price">₹695</p>
+            <div class="rating">4.9★</div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="image/rose-n-black-oud-aroma-diffuser-set-9797867gf-A_0_0.avif"
+              alt="For Her"
+            />
+            <p class="product-name">Rose and Oud Aroma Ensemble</p>
+            <p class="price">₹650</p>
+            <div class="rating">5★</div>
+          </div>
+          <div class="best-selling-card">
+            <img
+              src="image/sweet-n-serene-harmony-gift-hamper-9747200co-A_0_0.avif"
+              alt="For Her"
+            />
+            <p class="product-name">Sweet N Serene Harmony Hamper</p>
+            <p class="price">₹1895</p>
+            <div class="rating"></div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="carousel-container" style="margin-top: 20px">
+          <div class="carousel-slide2">
+            <img src="image/Cred_banner_D.avif" alt="Aniversary" />
+            <img src="image/paytm-homepage-fa-desktop_3.avif" alt="Birthday" />
+            <img src="image/jupitermoney_banner_d_0.avif" alt="flowers" />
+          </div>
+
+          <!-- Dots -->
+          <div class="carousel-dots">
+            <span class="dot2 active" onclick="moveToSlide2(0)"></span>
+            <span class="dot2" onclick="moveToSlide2(1)"></span>
+            <span class="dot2" onclick="moveToSlide2(2)"></span>
+          </div>
+        </div>
+      </section>
+      <!-- //produvts -->
+      <section>
+        <div class="product-container" style="margin-top: 20px">
+          <div class="row product">
+            <div class="product-card">
+              <div class="img-wrap">
+                <img src="image/cake_desktop_0.jpg" alt="Anniversary" />
+              </div>
+              <div class="details">
+                <ul>
+                  <li><h2>Delicious Cakes</h2></li>
+                  <li>Birthday Cakes</li>
+                  <li>Anniversary Cakes</li>
+                  <li>Designer Cakes</li>
+                  <li>Photo Cakes</li>
+                  <li>Chocolate Cakes</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="img-wrap">
+                <img src="image/gift_desktop_new.jpg" alt="Birthday" />
+              </div>
+              <div class="details">
+                <ul>
+                  <li><h2>Gifting Gallery</h2></li>
+                  <li>Photo Gifts</li>
+                  <li>Mugs</li>
+                  <li>Cushions</li>
+                  <li>Name Gifts</li>
+                  <li>Caricatures</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="product-card reverse">
+              <div class="img-wrap">
+                <img src="image/plant_desktop_0.jpg" alt="Combo" />
+              </div>
+              <div class="details">
+                <ul>
+                  <li><h2>Floral Delights</h2></li>
+                  <li>Red Roses</li>
+                  <li>Birthday Flowers</li>
+                  <li>Anniversary Flowers</li>
+                  <li>Exotic Flowers</li>
+                  <li>Flower Boxes</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="product-card reverse">
+              <div class="img-wrap">
+                <img src="image/floral-delights-desktop.avif" alt="Valentine" />
+              </div>
+              <div class="details">
+                <ul>
+                  <li><h2>Plant Paradise</h2></li>
+                  <li>Bonsai</li>
+                  <li>Indoor</li>
+                  <li>Air Purifying</li>
+                  <li>Lucky Bamboo</li>
+                  <li>Flowering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benner -->
+
+      <div class="benner" style="margin-top: 20px">
+        <div class="benner-img">
+          <img src="image/bnr.avif" alt="" />
+        </div>
+      </div>
+      <!-- Customer Testimonial -->
+      <section class="testimonial-section" style="margin-top: 10px">
+        <div class="testimonial-header">
+          <h2>Customer Testimonials</h2>
+          <button>View All</button>
+        </div>
+
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <p>
+              Absolutely loved the bouquet from Flowers Aura The arrangement was
+              stunninng.The quality and freshness of the flowers were topnotch.
+              The added touches of chocolate and a heartfelt letter made it an
+              extra special
+            </p>
+            <div class="testimonial-footer">
+              <span class="name">Langtithongba</span>
+              <span class="date">Posted on: 14/06/2025</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              The cake was really really too tasty, classy...nd delivery was
+              also on time.. I was happy to have this cake from you... Thank you
+              Flower Aura .
+            </p>
+            <div class="testimonial-footer">
+              <span class="name">Urmi Tirkey</span>
+              <span class="date">Posted on: 05/06/2025</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              The cake tastes super good, delivered fast, really on time fixed,
+              and the the condition of the cake received was excellent . Thank
+              you
+            </p>
+            <div class="testimonial-footer">
+              <span class="name">SR</span>
+              <span class="date">Posted on: 05/06/2025</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="about-text-wrapper" id="readMoreWrapper">
+        <div class="about-text" id="readMoreContent">
+          <h3>
+            FlowerAura: Send Flowers, Cakes, Gifts & Plants Online Across India
+          </h3>
+          <p>
+            At FlowerAura, we take pride in delivering the highest quality
+            flowers, cakes, plants, and gifts to your loved ones. Our diverse
+            range ensures there's something perfect for every occasion. From
+            romantic roses to delightful chocolate cakes and vibrant indoor
+            plants, we have it all. As India's most trusted gifting brand, we
+            guarantee fresh and beautiful flowers, delicious cakes, vibrant
+            plants, and unique gifts that bring joy and smiles. Enjoy the
+            convenience of doorstep delivery with our safe and secure packaging,
+            ensuring your order arrives in pristine condition. Let’s explore our
+            collection a little better:
+          </p>
+          <p>
+            <span class="bold">Flowers:</span> At FlowerAura, we offer a
+            stunning range of flower bouquets and arrangements. Choose from a
+            variety of flowers like roses, carnations, sunflowers, orchids, and
+            gerberas. For something special, explore our luxury flowers like
+            Cape Cup, Taal palm, Limonium, and Eucalyptus. Our reliable flower
+            delivery in india service ensures your flowers are handled with care
+            and arrive fresh and beautiful. We also offer city-specific services
+            like flower delivery in Bangalore, flower delivery in Delhi, and
+            flower delivery in Gurgaon to bring smiles to every doorstep.
+          </p>
+          <p>
+            <span class="bold">Cakes:</span> Our freshly baked & delicious cakes
+            are FSSAI-certified, ensuring safety and quality. We offer a wide
+            range of flavours, such as chocolate, black forest, red velvet,
+            tiramisu, coffee, blueberry, and various cake types, including bomb
+            cakes, designer cakes theme cakes, photo cakes, pinata cakes, fruit
+            cakes, & bento cakes. Our online cake delivery service guarantees
+            safe and timely delivery. Whether you're craving something sweet in
+            Bangalore, Delhi, or Gurgaon, our cake delivery service ensures
+            happiness reaches on time.
+          </p>
+          <p>
+            <span class="bold">Plants:</span> At FlowerAura, we understand the
+            need of plants for home and offer an extensive range of plants to
+            brighten your indoor spaces. Our plants are not just healthy but
+            also come potted in beautiful planters that add a touch of elegance
+            to any space. With FlowerAura's doorstep plants delivery same day,
+            you can enjoy the convenience of having your plants delivered safely
+            and swiftly.
+          </p>
+          <p>
+            <span class="bold">Gifts:</span> Finding new and trendy gift ideas
+            can be challenging, but we cater to that need with an amazing gift
+            range. Our variety includes gifts under categories such as home
+            decor, dining & serving, jewellery, showpieces, candles, spiritual
+            gifts, soft toys, and perfumes. We also offer a wide range of
+            heart-warming personalised gifts like mugs, cushions, wooden planks,
+            photo frames, LED lamps, neon lights, caricatures, key chains, bar
+            accessories, sippers, bottles, and more. One can also explore and
+            order gifts online based on the occasion and the relationships they
+            want to pamper.
+          </p>
+          <p>
+            <span class="bold">Combo Gifts:</span> At FlowerAura, we recognise
+            the joy of gifting and offer an exquisite range of combo gifts and
+            hampers to make every occasion special. From delightful cakes and
+            flowers combos to charming plant & cake pairings and even elegant
+            flower & plant combos, we have something to suit every taste and
+            preference. Our thoughtfully curated hampers, filled with premium
+            goodies, are designed to delight your loved ones and add a touch of
+            elegance to your celebrations.
+          </p>
+          <p>
+            <span class="bold">Personalised Gifts:</span> Every gift should
+            reflect your unique bond with your loved ones. That's why we offer a
+            stunning collection of personalised gifts, perfect for adding a
+            personal touch to any occasion. From custom mugs, cushions, and
+            water bottles to creative caricatures, diaries, coasters, fridge
+            magnets, key chains, and more, our range is designed to make every
+            moment memorable. Our seamless delivery service ensures that your
+            personalised gifts reach their destination on the same day, bringing
+            joy and a heartfelt connection to your special ones.
+          </p>
+          <h3>
+            Shop & Send Gifts Online On Different Occasions to Surprise Your
+            Loved Ones
+          </h3>
+          <p>
+            <span class="bold">Birthday:</span> Surprise your loved ones with
+            birthday gifts that bring joy and happiness. Explore a variety of
+            options, including cakes, personalised gifts, and combos, to create
+            lasting memories on their special day.
+          </p>
+          <p>
+            <span class="bold">Anniversary:</span> Mark your milestones with
+            meaningful anniversary gifts. Whether it’s flowers, cakes, or
+            personalised keepsakes, our selection will help you celebrate your
+            love and create beautiful memories together.
+          </p>
+          <p>
+            <span class="bold">Valentine's Day:</span> Make your soulmate feel
+            the most special person with romantic Valentine Day gifts that speak
+            from the heart. Pick from blooming beautiful flowers and gourmet
+            chocolates to unique personalised gifts. Express your love and
+            affection with a surprise that feels like a warm hug!
+          </p>
+          <p>
+            <span class="bold">Mother's Day:</span> Let your mom know just how
+            much you love and appreciate her with thoughtful Mother’s Day gifts.
+            Go for jewellery, décor items, crockery, self-care hampers, flowers,
+            and more to express your gratitude! Make her day truly unforgettable
+            with a gesture straight from the heart.
+          </p>
+          <p>
+            <span class="bold">Father's Day:</span> Shower your dad with true
+            love by surprising him with heartfelt Father’s Day gifts which
+            reflect the depth of your feelings toward him. Make his day
+            immensely special by sending elegant flower arrangements,
+            personalized keepsakes, indulgent hampers, and thoughtful gadgets.
+          </p>
+          <p>
+            At FlowerAura, we cater to all occasions and have the best gifts
+            that reflect your love and thoughtfulness, making every celebration
+            unforgettable. Choose FlowerAura for your special moments, and let
+            us help you create lasting memories with the perfect gift for every
+            occasion.
+          </p>
+          <h3>Send Rakhi Online for Your Brother Living Near Or Far Away</h3>
+          <p>
+            At FlowerAura, we understand the charm of traditions mixed with
+            modern convenience. Whether your brother is near or miles away, you
+            can make him feel loved by sending Rakhi online. Our thoughtfully
+            curated collection has something for every kind of sibling bond,
+            from simple threads to elaborate designs. Explore heartwarming
+            Rakhis for brother, and let him unwrap the love, joy, and sweet
+            memories that Raksha Bandhan brings. It’s a celebration wrapped in
+            emotion—delivered with a click.
+          </p>
+          <h3>
+            Never Miss Out on Celebrations with FlowerAura On-time Delivery
+          </h3>
+          <p>
+            At FlowerAura, we understand the importance of timely surprises in
+            making every celebration unforgettable. With our reliable same-day
+            delivery and midnight delivery services, you can rest assured that
+            your thoughtful gifts will reach their destination on time, no
+            matter the occasion. Whether it's our delightful range of cakes,
+            stunning floral arrangements, personalised gifts, or carefully
+            curated combos, we ensure your loved ones receive their surprises
+            when it matters most. From birthdays and anniversaries to festive
+            occasions like Raksha Bandhan and Diwali, FlowerAura's on-time
+            delivery guarantees you never miss out on making your moments truly
+            special.
+          </p>
+          <h3>Save Big with FlowerAura's Exclusive Offers and Discounts</h3>
+          <p>
+            At FlowerAura, we believe in making gifting easy and affordable for
+            everyone. That's why we keep dropping special offers throughout the
+            year, ensuring you always have the perfect gift at the best price.
+            Whether it's a birthday, anniversary, or just because, our exclusive
+            discounts and year-round offers help you save big while spreading
+            joy. Explore our wide range of flowers, cakes, and personalised
+            gifts, and enjoy significant savings on every purchase. With
+            FlowerAura Coupons, you can make every moment special without
+            breaking the bank. Stay tuned for more exciting deals, and start
+            gifting today! Check out our late cups and deals!
+          </p>
+          <h3>
+            Unleash the Power of Gifting: Install Our Android & iOS App Today
+          </h3>
+          <p>
+            Gifts hold the magical ability to convey emotions that words alone
+            may struggle to express. FlowerAura understands the profound
+            importance of gifting in our lives. That's why we bring you an
+            extraordinary feature-packed App, available for Android and iOS
+            devices, to experience the joy of gifting like never before. Our
+            user-friendly app is your on-the-go companion for shopping for
+            online gifts. Offering seamless navigation, it allows for easy
+            browsing of our diverse collection. With FlowerAura App, you can
+            keep track of your orders and stay updated with notifications on
+            ongoing offers and deals for the best finds at unbeatable prices.
+            So, download it now and start spreading smiles!
+          </p>
+
+          <!-- Keep adding more <p> as needed -->
+          <div class="text-fade"></div>
+        </div>
+
+        <!-- Centered Read More -->
+        <div class="read-more-btn-wrap">
+          <span class="read-more-btn" onclick="toggleReadMore()"
+            >Read More</span
+          >
+        </div>
+      </div>
+
+      <!-- Related Blog -->
+      <div class="related-blog">
+        <h1 style="margin-left: 80px">Related Blog</h1>
+        <div class="row">
+          <div class="col-4">
+            <img src="image/Cover-Desktop_7.avif" alt="" />
+            <h3>The Pollination of Art: From Vase to Canvas</h3>
+            <p>
+              Flowers have been whispering secrets to artists for centuries.
+              Sometimes, they bloom boldly in golden yellows like Van Gogh’s
+              Sunflowers; other times, they wilt with drama-like characters in a
+              Shakespearean
+            </p>
+            <a href="#">Read More......</a>
+          </div>
+          <div class="col-4">
+            <img
+              src="image/How-to-Choose-the-Best-Flower-Shop-Delivery-Service-Near-You--Blog-Cover-D.avif"
+              alt=""
+            />
+            <h3>
+              How to Choose the Best Flower Shop Delivery Service Near You
+            </h3>
+            <p>
+              Did you know that 75% of people say receiving flowers instantly
+              improves their mood? Flowers have the power to brighten anyone’s
+              day, turning ordinary moments into cherished memories. But for
+            </p>
+            <a href="#">Read More......</a>
+          </div>
+          <div class="col-4">
+            <img
+              src="image/how-international-flower-delivery-works-cover-D.avif"
+              alt=""
+            />
+            <h3>
+              Sending Blooms Across Borders: How International Flower Delivery
+              Works
+            </h3>
+            <p>
+              Flowers have always been a meaningful token, whether to celebrate
+              a milestone, offer sympathy, or simply express love. Over time,
+              gifting blooms has become a common way to show you
+            </p>
+            <a href="#">Read More......</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- foooter section -->
+
+    <footer
+      class="footer-section"
+      style="margin-top: 20px; margin-bottom: 20px"
+    >
+      <div class="row">
+        <div class="col-3">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sell With Us</a></li>
+            <li><a href="#">Coupons & Deals</a></li>
+            <li><a href="#">Cancellation & Refund</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Retails Stores</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Quotes</a></li>
+            <li><a href="#">RCorporate Gifts</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li><a href="#">INR</a></li>
+            <li><a href="#">Franchise</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Download App</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3>Simplify your gifting experience with our app.</h3>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://imgcdn.floweraura.com/home-page/app-footer-qr.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://imgcdn.floweraura.com/fa-media/play_store.svg?tr=w-150,h-44,dpr-1.5,q-70"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://imgcdn.floweraura.com/fa-media/app_store.svg?tr=w-150,h-44,dpr-1.5,q-70"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: blue"></i>
+            <i
+              class="fa-brands fa-square-x-twitter fa-2xl"
+              style="color: black"
+            ></i>
+            <i class="fa-brands fa-youtube fa-2xl" style="color: red"></i>
+            <i
+              class="fa-brands fa-pinterest fa-2xl"
+              style="color: rgb(110, 5, 5)"
+            ></i>
+            <i
+              class="fa-brands fa-square-instagram fa-2xl"
+              style="color: #ed076f"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-2xl"
+              style="color: rgb(20, 50, 114)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="payment">
+  <div class="payment-left">
+    <img
+      src="https://imgcdn.floweraura.com/fa-logo/final-23-desk.svg"
+      alt="FA Logo"
+      height="50"
+    />
+    <span class="copyright">
+      © 2025. FA GIFTS PVT. LTD
+    </span>
+  </div>
+
+  <div class="payment-right">
+    <span class="accept-text">We Accept:</span>
+    <img
+      src="image/desktop-payment-option.png"
+      alt="Payment Options"
+      class="payment-img"
+    />
+  </div>
+</div>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>
